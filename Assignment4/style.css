@@ -1,0 +1,99 @@
+
+  .NavMenus
+{
+    padding-left: 2em !important;
+    font-weight: 400;
+  
+}
+
+.capitalize
+{
+    text-transform: capitalize !important;
+}
+.BodySection
+{
+    margin-top: 2em;
+     text-align: center; 
+}
+.navbar-nav li a:hover
+{
+  color: black !important;;
+  text-decoration: none;
+}
+
+
+
+.justify
+{
+  line-height: 2em;
+ 
+
+}
+
+.BookCLub .card-title,.BookCLub h3,.gallery h2,.statistics h2
+{
+  font-weight: bold !important;
+}
+.underline
+{
+  text-decoration:underline;
+}
+.Homefooter
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+
+
+  
+ 
+}
+  
+
+.scrollToTop {
+    background: white;
+    bottom: 15px;
+    display: none;
+    height: 35px;
+    padding: 2px;
+    position: fixed;
+    right: 15px;
+    text-align: center;
+    text-decoration: none;
+    width: 50px;
+    z-index: 99999;
+    
+}
+
+
+
+.Homefooter div
+{
+    background-color: black;
+    color: white;
+    display: inline-block;
+     width: 350px; 
+    height: 200px;
+
+  
+ 
+}
+
+
+.footer{
+
+    padding-top: 40px;
+}
+
+.footerul{
+    display: inline;
+    padding: 3px;
+}
+.footer-bottom
+{
+    /* background-color: #316DD9 !important; */
+    font-size: small;
+   padding-top: 10px;
+    /* text-align: left; */
+}
