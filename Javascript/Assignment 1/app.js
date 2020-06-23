@@ -434,28 +434,28 @@ document.write('Now the value of a is :' + a + '<br/><br/>');
 // does not enter a new number, multiplication table of 5
 // should be displayed by default.
 
-// var inp = prompt("Enter number");
-// debugger;
-// console.log(inp);
-// if(inp == "")
-// {
-//     inp = 5;
-//     document.write('<h1>Table of ' + parseInt(inp) + '</h1>');
-//     for (var i=1;i<11;i++)
-//     document.write('<p>'+ inp + '*' + i + '=' + inp*i + '</p>');
+var inp = prompt("Enter number");
+debugger;
+console.log(inp);
+if(inp == "")
+{
+    inp = 5;
+    document.write('<h1>Table of ' + parseInt(inp) + '</h1>');
+    for (var i=1;i<11;i++)
+    document.write('<p>'+ inp + '*' + i + '=' + inp*i + '</p>');
   
-// }
+}
 
-// else
-// {
+else
+{
 
-//     document.write('<h1>Table of ' + parseInt(inp) + '</h1>');
-//     for (var i=1;i<11;i++)
-//     document.write('<p>'+ parseInt(inp) + '*' + i + '=' + parseInt(inp)*i + '</p>');
+    document.write('<h1>Table of ' + parseInt(inp) + '</h1>');
+    for (var i=1;i<11;i++)
+    document.write('<p>'+ parseInt(inp) + '*' + i + '=' + parseInt(inp)*i + '</p>');
  
 
     
-// }
+}
 
 // 6. Take
 // a) Take three subjects name from user and store them in 3
@@ -475,11 +475,11 @@ document.write('Now the value of a is :' + a + '<br/><br/>');
 // // var totalMarks = sub1Marks + sub2Marks + sub3Marks;
 // // var per = (totalMarks/totalMarks) * 100;
 
-// document.write("<table><tr><th>Subject</th>" + " " + "<th>Total Marks</th>" + " " + "<th>Obtained Marks</th>" + " " + " <th>Percentage</th></tr><br/></table>");
-// document.write("<tr><td>English</td>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" + totalMarks +"</td>" +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" + sub1Marks+ "</td>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" +((sub1Marks/totalMarks) * 100)+ "</td>" + "</tr><br/>");
-// document.write("<tr><td>Maths</td>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" + totalMarks +"</td>" +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" + sub2Marks+ "</td>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" +((sub2Marks/totalMarks) * 100)+ "</td>" + "</tr><br/>");
-// document.write("<tr><td>Urdu</td>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" + totalMarks +"</td>" +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" + sub3Marks+ "</td>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" +((sub3Marks/totalMarks) * 100)+ "</td>" + "</tr><br/>");
-// document.write("<tr><td></td>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" + (3*totalMarks) +"</td>" +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" + (sub1Marks + sub2Marks + sub3Marks) + "</td>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" +((sub1Marks+sub2Marks+sub3Marks)/(3*totalMarks) * 100)+ "</td>" + "</tr>");
+document.write("<table><tr><th>Subject</th>" + " " + "<th>Total Marks</th>" + " " + "<th>Obtained Marks</th>" + " " + " <th>Percentage</th></tr><br/></table>");
+document.write("<tr><td>English</td>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" + totalMarks +"</td>" +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" + sub1Marks+ "</td>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" +((sub1Marks/totalMarks) * 100)+ "</td>" + "</tr><br/>");
+document.write("<tr><td>Maths</td>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" + totalMarks +"</td>" +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" + sub2Marks+ "</td>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" +((sub2Marks/totalMarks) * 100)+ "</td>" + "</tr><br/>");
+document.write("<tr><td>Urdu</td>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" + totalMarks +"</td>" +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" + sub3Marks+ "</td>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" +((sub3Marks/totalMarks) * 100)+ "</td>" + "</tr><br/>");
+document.write("<tr><td></td>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" + (3*totalMarks) +"</td>" +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" + (sub1Marks + sub2Marks + sub3Marks) + "</td>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" +((sub1Marks+sub2Marks+sub3Marks)/(3*totalMarks) * 100)+ "</td>" + "</tr>");
 
 
 
@@ -489,105 +489,105 @@ document.write('Now the value of a is :' + a + '<br/><br/>');
 // user enters “Karachi”, welcome the user like this:
 // “Welcome to city of lights”
 
-// var city = prompt("Enter City : ");
-// if (city.toLowerCase() == "karachi")
-// {
-//     document.write("Welcome to city of Lights <br/>");
-// }
+var city = prompt("Enter City : ");
+if (city.toLowerCase() == "karachi")
+{
+    document.write("Welcome to city of Lights <br/>");
+}
 
 // // 2. Write a program to take “gender” as input from user. If the
 // // user is male, give the message: Good Morning Sir. If the
 // // user is female, give the message: Good Morning Ma’am.
 
-// var gender = prompt("Enter Gender");
-// if(gender.toLowerCase() == "male")
-// {
-//     document.write(" Good Morning Sir <br/>");
+var gender = prompt("Enter Gender");
+if(gender.toLowerCase() == "male")
+{
+    document.write(" Good Morning Sir <br/>");
 
-// }
-// else
-// {  document.write("Good Morning Ma’am <br/>");
+}
+else
+{  document.write("Good Morning Ma’am <br/>");
 
-// }
+}
 
 // 3. Write a program to take input color of road traffic signal
 // from the user & show the message according to this table:
 
-// var color = prompt("Enter Color");
-// if(color.toLowerCase() == "yellow")
-// {
-// document.write("<tr><td>"+color+"</td>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td></td>" +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td></td>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" + " Ready to Move " + "</td>" + "</tr><br/>");
-// }
-// else if(color.toLowerCase() == "red")
-// {
-//     document.write("<tr><td>"+color+"</td>" + "&nbsp;&nbsp;&nbsp;&nbsp;" + "<td></td>" +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td></td>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" + " Must Stop " + "</td>" + "</tr><br/>");
-// }
-// else
-// {
-//     document.write("<tr><td>"+color+"</td>" + "&nbsp;&nbsp;&nbsp;&nbsp;" + "<td></td>" +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td></td>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" + " Move Now " + "</td>" + "</tr><br/>");
-// }
+var color = prompt("Enter Color");
+if(color.toLowerCase() == "yellow")
+{
+document.write("<tr><td>"+color+"</td>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td></td>" +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td></td>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" + " Ready to Move " + "</td>" + "</tr><br/>");
+}
+else if(color.toLowerCase() == "red")
+{
+    document.write("<tr><td>"+color+"</td>" + "&nbsp;&nbsp;&nbsp;&nbsp;" + "<td></td>" +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td></td>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" + " Must Stop " + "</td>" + "</tr><br/>");
+}
+else
+{
+    document.write("<tr><td>"+color+"</td>" + "&nbsp;&nbsp;&nbsp;&nbsp;" + "<td></td>" +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td></td>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<td>" + " Move Now " + "</td>" + "</tr><br/>");
+}
 
 // 4. Write a program to take input remaining fuel in car (in
 //     litres) from user. If the current fuel is less than 0.25litres,
 //     show the message “Please refill the fuel in your car”
     
 
-// var remFuel = parseFloat(prompt("Enter remaining fuel in (litres)"));
-// if(remFuel < 0.25)
-// {
-//     document.write("Please refill the fuel in your car");
-// }
+var remFuel = parseFloat(prompt("Enter remaining fuel in (litres)"));
+if(remFuel < 0.25)
+{
+    document.write("Please refill the fuel in your car");
+}
 
 
 // 5. Run this script, & check whether alert message would be
 // displayed or not. Record the outputs
 
-//  var a = 4;
-//  if (++a === 5){
-//  alert("given condition for variable a is true"); //output : Alert displayed
-//  }
+ var a = 4;
+ if (++a === 5){
+ alert("given condition for variable a is true"); //output : Alert displayed
+ }
 
 
-//  var b = 82;
-//  if (b++ === 83){
-//  alert("given condition for variable b is true");  //output : Alert not displayed
-//  }
+ var b = 82;
+ if (b++ === 83){
+ alert("given condition for variable b is true");  //output : Alert not displayed
+ }
 
 
-// var c = 12;
-// if (c++ === 13){
-// alert("condition 1 is true");  //output : Alert not  displayed
+var c = 12;
+if (c++ === 13){
+alert("condition 1 is true");  //output : Alert not  displayed
 
-// }
+}
 
 
 
-// if (c === 13){
-// alert("condition 2 is true");   //output : Alert displayed
-// }
+if (c === 13){
+alert("condition 2 is true");   //output : Alert displayed
+}
 
-// if (++c < 14){
-// alert("condition 3 is true"); //output : Alert not displayed
-// }
-// if(c === 14){
-// alert("condition 4 is true"); //output : Alert displayed
-// }
+if (++c < 14){
+alert("condition 3 is true"); //output : Alert not displayed
+}
+if(c === 14){
+alert("condition 4 is true"); //output : Alert displayed
+}
 
-// var materialCost = 20000;
-// var laborCost = 2000;
-// var totalCost = materialCost + laborCost;
-// if (totalCost === laborCost + materialCost){
-// alert("The cost equals");  //output : Alert displayed
-// }
-//  if (true){
-// alert("True"); //output : Alert displayed
-// }
-// if (false){ alert("False"); //output : Alert not displayed
-// }
+var materialCost = 20000;
+var laborCost = 2000;
+var totalCost = materialCost + laborCost;
+if (totalCost === laborCost + materialCost){
+alert("The cost equals");  //output : Alert displayed
+}
+ if (true){
+alert("True"); //output : Alert displayed
+}
+if (false){ alert("False"); //output : Alert not displayed
+}
 
-//  if("car" < "cat"){
-//     alert("car is smaller than cat"); //output : Alert  displayed
-//     }
+ if("car" < "cat"){
+    alert("car is smaller than cat"); //output : Alert  displayed
+    }
     
 // 6. Write a program to take input the marks obtained in three
 // subjects & total marks. Compute & show the resulting
@@ -596,20 +596,20 @@ document.write('Now the value of a is :' + a + '<br/><br/>');
 
 
 
-// var Marks1 = parseInt(prompt("Enter Subject 1 Marks :"));
-// var Marks2 = parseInt(prompt("Enter Subject 2 Marks :"));
-// var Marks3 = parseInt(prompt("Enter Subject 3 Marks :"));
-// var totMarks = parseInt(prompt("Enter Total Marks :"));
-// var marksObtained = Marks1 + Marks2 + Marks3;
-// var percent = (marksObtained/totMarks * 100);
-// var grade = percent >= 80 ? 'A-one' : percent >= 70 ? 'A' :  percent >= 60 ? 'B' : 'Fail';
-// var remarks = percent >= 80 ? 'Excellent' : percent >= 70 ? 'Good' :  percent >= 60 ? 'You need to improve' : 'Sorry';
-// document.write("<h1>Marksheet</h1><br/>");
-// document.write("Total Marks : " + totMarks + "<br/>");
-// document.write("Marks Obtained : " + marksObtained + "<br/>");
-// document.write("Percentage : " + percent + "<br/>");
-// document.write("Grade : " + grade + "<br/>");
-// document.write("Remarks : " + remarks + "<br/>");
+var Marks1 = parseInt(prompt("Enter Subject 1 Marks :"));
+var Marks2 = parseInt(prompt("Enter Subject 2 Marks :"));
+var Marks3 = parseInt(prompt("Enter Subject 3 Marks :"));
+var totMarks = parseInt(prompt("Enter Total Marks :"));
+var marksObtained = Marks1 + Marks2 + Marks3;
+var percent = (marksObtained/totMarks * 100);
+var grade = percent >= 80 ? 'A-one' : percent >= 70 ? 'A' :  percent >= 60 ? 'B' : 'Fail';
+var remarks = percent >= 80 ? 'Excellent' : percent >= 70 ? 'Good' :  percent >= 60 ? 'You need to improve' : 'Sorry';
+document.write("<h1>Marksheet</h1><br/>");
+document.write("Total Marks : " + totMarks + "<br/>");
+document.write("Marks Obtained : " + marksObtained + "<br/>");
+document.write("Percentage : " + percent + "<br/>");
+document.write("Grade : " + grade + "<br/>");
+document.write("Remarks : " + remarks + "<br/>");
 
 
 // 7. Guess game:
@@ -620,51 +620,51 @@ document.write('Now the value of a is :' + a + '<br/><br/>');
 // b. If the guessed number +1 is the secret number, show
 // “Close enough to the correct answer”.
 
-// var secretNumber = 7;
-// console.log(secretNumber);
-// var userInp = prompt("Guess the secret number between 1 to 10");
-// if(userInp === secretNumber)
-// {
-//   document.write("Bingo! Correct answer");
-// }
-// else if(++userInp === secretNumber)
-// {
-//     document.write("Close enough to the correct answer");
-// }
-// else
-// {
-//     document.write("Sorry! Incorrect answer");
+var secretNumber = 7;
+console.log(secretNumber);
+var userInp = prompt("Guess the secret number between 1 to 10");
+if(userInp === secretNumber)
+{
+  document.write("Bingo! Correct answer");
+}
+else if(++userInp === secretNumber)
+{
+    document.write("Close enough to the correct answer");
+}
+else
+{
+    document.write("Sorry! Incorrect answer");
 
-// }
+}
 
 // 8. Write a program to check whether the given number is
 // divisible by 3. Show the message to the user if the number
 // is divisible by 3.
 
-// var number = parseInt(prompt("Enter Number"));
-// if(number %3 === 0)
-// {
-//     document.write("the number is divisible by 3");
-// }
-// else
-// {
-//     document.write("the number is not divisible by 3");
+var number = parseInt(prompt("Enter Number"));
+if(number %3 === 0)
+{
+    document.write("the number is divisible by 3");
+}
+else
+{
+    document.write("the number is not divisible by 3");
 
-// }
+}
 
 // 9. Write a program that checks whether the given input is an
 // even number or an odd number
 
-// var number = parseInt(prompt("Enter Number"));
-// if(number %2 === 0)
-// {
-//     document.write("This is Even Number");
-// }
-// else
-// {
-//     document.write("This is Odd Number ");
+var number = parseInt(prompt("Enter Number"));
+if(number %2 === 0)
+{
+    document.write("This is Even Number");
+}
+else
+{
+    document.write("This is Odd Number ");
 
-// }
+}
 
 // 10. Write a program that takes temperature as input and
 // shows a message based on following criteria
@@ -673,26 +673,26 @@ document.write('Now the value of a is :' + a + '<br/><br/>');
 // c. T > 20 then “Today’s Weather is cool.”
 // d. T > 10 then “OMG! Today’s weather is so Cool
 
-// var temp = parseFloat(prompt("Enter temperature"));
-// if(temp > 40)
-// {
-//   document.write("It is too hot outside.");
-// }
-// else if( temp > 30 && temp <= 40 )
-// {
-//     document.write("The Weather today is Normal.");
+var temp = parseFloat(prompt("Enter temperature"));
+if(temp > 40)
+{
+  document.write("It is too hot outside.");
+}
+else if( temp > 30 && temp <= 40 )
+{
+    document.write("The Weather today is Normal.");
 
-// }
-// else if( temp > 20 && temp <= 30 )
-// {
-//     document.write("Today’s Weather is cool.");
+}
+else if( temp > 20 && temp <= 30 )
+{
+    document.write("Today’s Weather is cool.");
 
-// }
-// else
-// {
-//     document.write("OMG! Today’s weather is so Cool");
+}
+else
+{
+    document.write("OMG! Today’s weather is so Cool");
 
-// }
+}
 
 // 11. Write a program to create a calculator for +,-,*, / & %
 // using if statements. Take the following input:
@@ -702,40 +702,40 @@ document.write('Now the value of a is :' + a + '<br/><br/>');
 // Compute & show the calculated result to user.
 
 
-// var firstNumber = parseFloat(prompt("Enter First Number"));
-// var secondNumber = parseFloat(prompt("Enter Second Number"));
-// var Operator = prompt("Enter Operator from (+, -, *, /, %)");
-// var result;
-// if(Operator == "+")
-// { 
-//     result = firstNumber + secondNumber;
+var firstNumber = parseFloat(prompt("Enter First Number"));
+var secondNumber = parseFloat(prompt("Enter Second Number"));
+var Operator = prompt("Enter Operator from (+, -, *, /, %)");
+var result;
+if(Operator == "+")
+{ 
+    result = firstNumber + secondNumber;
 
-// }
-// else if(Operator == "-")
-// {
-//     result = firstNumber - secondNumber;
-// }
-// else if(Operator == "*")
-// {
-//     result = firstNumber * secondNumber;
-// }
+}
+else if(Operator == "-")
+{
+    result = firstNumber - secondNumber;
+}
+else if(Operator == "*")
+{
+    result = firstNumber * secondNumber;
+}
 
-// else if(Operator == "/")
-// {
+else if(Operator == "/")
+{
 
-//     result = firstNumber / secondNumber;
-// }
+    result = firstNumber / secondNumber;
+}
 
-// else if(Operator == "%")
-// {
-//     result = firstNumber % secondNumber;
-// }
-// else 
-// {
-//    alert("Invalid Operator");
-// }
+else if(Operator == "%")
+{
+    result = firstNumber % secondNumber;
+}
+else 
+{
+   alert("Invalid Operator");
+}
 
-// document.write("Your result is " + result );
+document.write("Your result is " + result );
 
 
 // // /************************************************** Chapter 12-13 ************************************************/
@@ -745,45 +745,49 @@ document.write('Now the value of a is :' + a + '<br/><br/>');
 // number, uppercase letter or lower case letter. (Hint: ASCII
 // codes:- A=65, Z=90, a=97, z=122).
 
-// var chr = prompt("Enter a single character");
-// if(chr.charCodeAt(0) >= 48 &&  chr.charCodeAt(0) <=57)
-// {
-//     document.write("Character is Number");
+var chr = prompt("Enter a single character");
+if(chr.charCodeAt(0) >= 48 &&  chr.charCodeAt(0) <=57)
+{
+    document.write("Character is Number");
 
-// }
-// else if(chr.charCodeAt(0) >= 97 &&  chr.charCodeAt(0) <=122)
-// {
-//     document.write("Character is Lower Case letter");
-// }
+}
+else if(chr.charCodeAt(0) >= 97 &&  chr.charCodeAt(0) <=122)
+{
+    document.write("Character is Lower Case letter");
+}
 
-// else if(chr.charCodeAt(0) >= 65 &&  chr.charCodeAt(0) <=90)
-// {
-//     document.write("Character is Upper Case letter");
-// }
-// else
-// {
-//     document.write("Character is neither a number, Lower case or Upper Case letter");
-// }
+else if(chr.charCodeAt(0) >= 65 &&  chr.charCodeAt(0) <=90)
+{
+    document.write("Character is Upper Case letter");
+}
+else
+{
+    document.write("Character is neither a number, Lower case or Upper Case letter");
+}
 
 
 // 2. Write a JavaScript program that accept two integers and
 // display the larger. Also show if the two integers are equal.
 
-// var num1 = parseInt("Enter first Integer");
-// var num2 = parseInt("Enter Second Integer");
-// if(num1 > num2)
-// {
-//     document.write("Largest Integer is " +  num1);
-// }
-// else if(num2 > num1)
-// {
-//     document.write("Largest Integer is " +  num2);
+var num1 = parseInt("Enter first Integer");
+var num2 = parseInt("Enter Second Integer");
+if(num1 > num2)
+{
+    document.write("Largest Integer is " +  num1);
+}
+else if(num2 > num1)
+{
+    document.write("Largest Integer is " +  num2);
 
-// }
-// else
-// {
-//     document.write("Both Integers are equal");
-// }
+}
+else
+{
+    document.write("Both Integers are equal");
+}
+
+// 3. Write a program that takes input a number from user &
+// state whether the number is positive, negative or zero.
+
 
 
 // // /************************************************** Chapter 14-16 ************************************************/
@@ -796,6 +800,9 @@ var arr = [];
 // 2. Declare an empty array using JS object notation to store
 // student names in future.
 var stdArr = ['Adil','Mazhar','Mehdi'];
+
+// 3. Declare and initialize a strings array.
+
 
 // // /************************************************** Chapter 17-20 ************************************************/
 
