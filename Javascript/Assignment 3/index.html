@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="style.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="container">
+
+   
+   
+      
+            <div class="calculator card" style="width: 40rem;">
+
+                <input type="text" id="Calinp" class="calculator-screen z-depth-1" value="" disabled />
+            
+                <div class="calculator-keys">
+            
+                  <button type="button" onclick="btnClick(value)" class="operator btn btn-info" value="+">+</button>
+                  <button type="button"  onclick="btnClick(value)" class="operator btn btn-info" value="-">-</button>
+                  <button type="button"  onclick="btnClick(value)" class="operator btn btn-info" value="*">&times;</button>
+                  <button type="button"  onclick="btnClick(value)" class="operator btn btn-info" value="/">&divide;</button>
+            
+                  <button type="button" value="7"   onclick="btnClick(value)" class="btn btn-light waves-effect">7</button>
+                  <button type="button" value="8"  onclick="btnClick(value)" class="btn btn-light waves-effect">8</button>
+                  <button type="button" value="9"   onclick="btnClick(value)" class="btn btn-light waves-effect">9</button>
+            
+            
+                  <button type="button" value="4"  onclick="btnClick(value)" class="btn btn-light waves-effect">4</button>
+                  <button type="button" value="5"  onclick="btnClick(value)"  class="btn btn-light waves-effect">5</button>
+                  <button type="button" value="6"  onclick="btnClick(value)" class="btn btn-light waves-effect">6</button>
+            
+            
+                  <button type="button" onclick="btnClick(value)" value="1" class="btn btn-light waves-effect">1</button>
+                  <button type="button"   value="2"  onclick="btnClick(value)" class="btn btn-light waves-effect">2</button>
+                  <button type="button"     value="3"   onclick="btnClick(value)" class="btn btn-light waves-effect">3</button>
+            
+            
+                  <button type="button" value="0"  onclick="btnClick(value)" class="btn btn-light waves-effect">0</button>
+                  <button type="button"  onclick="btnClick(value)" class="decimal function btn btn-secondary" value=".">.</button>
+                  <button type="button"  onclick="btnClear()" class="all-clear function btn btn-danger btn-sm" value="all-clear">AC</button>
+            
+                  <button type="button"  onclick="btnResult()" class="equal-sign operator btn btn-light" value="=">=</button>
+            
+                </div>
+              </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
