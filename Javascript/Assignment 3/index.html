@@ -19,7 +19,7 @@
       
             <div class="calculator card" style="width: 40rem;">
 
-                <input type="text" id="Calinp" class="calculator-screen z-depth-1" value="" disabled />
+                <input type="text" id="Calinp" class="calculator-screen z-depth-1" maxlength="17" value="" disabled />
             
                 <div class="calculator-keys">
             
@@ -39,14 +39,16 @@
             
             
                   <button type="button" onclick="btnClick(value)" value="1" class="btn btn-light waves-effect">1</button>
-                  <button type="button"   value="2"  onclick="btnClick(value)" class="btn btn-light waves-effect">2</button>
-                  <button type="button"     value="3"   onclick="btnClick(value)" class="btn btn-light waves-effect">3</button>
+                  <button type="button" value="2"  onclick="btnClick(value)" class="btn btn-light waves-effect">2</button>
+                  <button type="button" value="3"   onclick="btnClick(value)" class="btn btn-light waves-effect">3</button>
             
             
                   <button type="button" value="0"  onclick="btnClick(value)" class="btn btn-light waves-effect">0</button>
-                  <button type="button"  onclick="btnClick(value)" class="decimal function btn btn-secondary" value=".">.</button>
-                  <button type="button"  onclick="btnClear()" class="all-clear function btn btn-danger btn-sm" value="all-clear">AC</button>
-            
+                  <button type="button" onclick="btnClick(value)" class="decimal function btn btn-light" value=".">.</button>
+                  <button type="button" onclick="btnClearAll()" class="all-clear function btn btn-danger btn-sm" value="all-clear">C</button>
+                  <button type="button" onclick="btnClear()" class="clear function btn btn-danger btn-sm" value="clear">CA</button>
+                  <button type="button"  onclick="btnsqr(value)" class="operator btn btn-light" value="">sqr</button>
+                  <button type="button"  onclick="btnsqrt(value)" class="operator btn btn-light" value="">&Sqrt;</button>
                   <button type="button"  onclick="btnResult()" class="equal-sign operator btn btn-light" value="=">=</button>
             
                 </div>
