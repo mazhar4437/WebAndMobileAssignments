@@ -790,7 +790,7 @@ else
 
 
 
-// // /************************************************** Chapter 14-16 ************************************************/
+// // /************************************************** Chapter 14-20 ************************************************/
 
 // 1. Declare an empty array using JS literal notation to store
 // student names in future.
@@ -803,8 +803,6 @@ var stdArr = ['Adil','Mazhar','Mehdi'];
 
 // 3. Declare and initialize a strings array.
 
-
-// // /************************************************** Chapter 17-20 ************************************************/
 
 // 1. Declare and initialize an empty multidimensional array.
 // (Array of arrays)
