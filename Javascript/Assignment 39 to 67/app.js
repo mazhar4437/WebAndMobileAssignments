@@ -1,232 +1,267 @@
-/***************Chap 38 till 42 ********/
+/***************Chap 39 till 42 ********/
 //1. 
 
-// function power(a,b)
-// {
-//     var count = 0;
-//     var res = a;
-// while(count<b-1)
-// {
-//     res = res * a;
-//     count++;
-// }
+function power(a,b)
+{
+    var count = 0;
+    var res = a;
+while(count<b-1)
+{
+    res = res * a;
+    count++;
+}
 
-// return res;
+return res;
 
-// }
+}
 
-// var inp = parseInt(prompt("Enter Value to calculate power"));
-// var nooftimes = parseInt(prompt("Enter Value for number of time to calculate power"));
-// var value = power(inp,nooftimes);
-// alert(value);
-
-
-//2
-// function leap(inp)
-// {
+var inp = parseInt(prompt("Enter Value to calculate power"));
+var nooftimes = parseInt(prompt("Enter Value for number of time to calculate power"));
+var value = power(inp,nooftimes);
+alert(value);
 
 
-//     if(inp % 4 == 0 || inp % 100 == 0 || inp % 400 == 0)
-//     {
-//       alert(inp + " is a Leap Year");
-//     }
-
-//     else
-//     {
-//         alert(inp + " is not a Leap Year");
-//     }
-
-//  }
-//   var year = parseInt(prompt("Enter Year"));
-//   leap(year);
-
-//3.
+2
+function leap(inp)
+{
 
 
-// function area(s,a,b,c){
+    if(inp % 4 == 0 || inp % 100 == 0 || inp % 400 == 0)
+    {
+      alert(inp + " is a Leap Year");
+    }
 
-//     var ar = s*(s-a)*(s-b)*(s-c); //4.5(4.5-2)(4.5-3)(4.5-4)
-//     alert("Area of triangle is " + ar);
+    else
+    {
+        alert(inp + " is not a Leap Year");
+    }
 
-// }
+ }
+  var year = parseInt(prompt("Enter Year"));
+  leap(year);
 
-// function lengthofSides(a,b,c)
-// {
-//     var s = (a+b+c)/2;
-//     //s= 4.5
-//      return area(s,a,b,c);
-
-
-// }
-
-// var leng1 = parseFloat(prompt("Enter Length  : "));
-// var leng2 = parseFloat(prompt("Enter Breadth : "));
-// var leng3 = parseFloat(prompt("Enter Height   : "));
-// lengthofSides(leng1,leng2,leng3);
-
-//4.
+3.
 
 
-// function mainFunc()
-// {
-//    var sub1 = parseFloat(prompt("Enter Marks for Subject 1")); 
-//    var sub2 = parseFloat(prompt("Enter Marks for Subject 2"));
-//    var sub3 = parseFloat(prompt("Enter Marks for Subject 1"));
-//    var average = CalAverage(sub1,sub2,sub3);
-//    var percentage = CalPercent(sub1,sub2,sub3);
-//    alert("Average Marks of Student for all subjects is " + average);
-//    alert("Percentage of Student is " + percentage);
+function area(s,a,b,c){
 
-// }
+    var ar = s*(s-a)*(s-b)*(s-c); //4.5(4.5-2)(4.5-3)(4.5-4)
+    alert("Area of triangle is " + ar);
 
+}
 
-// function CalAverage(sub1,sub2,sub3)
-// {
-//    var average = (sub1 + sub2 + sub3) / 3;
-//    return average;
-
-// }
-
-// function CalPercent(sub1,sub2,sub3)
-// {
-//     var totMarks = 300;
-//    var per = ((sub1 + sub2 + sub3)/ totMarks) * 100 ;
-//    return per;
-
-// }
-
-// mainFunc();
-
-//5.
-// function IndexOf(s,str)
-// {
+function lengthofSides(a,b,c)
+{
+    var s = (a+b+c)/2;
+    //s= 4.5
+     return area(s,a,b,c);
 
 
-//     var i = 0,flag = false;
-// do 
-// {
+}
 
-//     if(s === str[i])
-//    {
-//        alert("Index of character " + s + " is " + i);
-//        flag = true;
-//        break;
-//    }
+var leng1 = parseFloat(prompt("Enter Length  : "));
+var leng2 = parseFloat(prompt("Enter Breadth : "));
+var leng3 = parseFloat(prompt("Enter Height   : "));
+lengthofSides(leng1,leng2,leng3);
 
-//    else
-//    {
-//        i++;
-//        flag = false;
-//    }
+4.
 
 
-// }
-// while(i<str.length)
+function mainFunc()
+{
+   var sub1 = parseFloat(prompt("Enter Marks for Subject 1")); 
+   var sub2 = parseFloat(prompt("Enter Marks for Subject 2"));
+   var sub3 = parseFloat(prompt("Enter Marks for Subject 1"));
+   var average = CalAverage(sub1,sub2,sub3);
+   var percentage = CalPercent(sub1,sub2,sub3);
+   alert("Average Marks of Student for all subjects is " + average);
+   alert("Percentage of Student is " + percentage);
 
-// if(flag == false)
-//    {
-//     alert("Your given character is not found");
-//    }
-
-// }
-
-// var str = prompt("Enter String").toLowerCase();
-// var s = prompt("Enter character to find its index in your string").toLowerCase();
-// IndexOf(s,str);
-
-//6.
-
-// function removeVowels()
-
-// {
-
-//     var str = prompt("Enter String to remove all vowels from it");
-
-//     var i = 0;
-//    var finalstr = "";
-
-//   do
-//   {
-//     if(str.toLowerCase().charCodeAt(i) != 97 && str.toLowerCase().charCodeAt(i) != 101 && str.toLowerCase().charCodeAt(i) != 105 && str.toLowerCase().charCodeAt(i) != 111 && str.toLowerCase().charCodeAt(i) != 118)
-//     {
-//     finalstr += str[i];
-//     i++;
-//     }
-//     else
-//     {
-//         i++;
-//     }
-//   }
-//   while(i < str.length)
+}
 
 
+function CalAverage(sub1,sub2,sub3)
+{
+   var average = (sub1 + sub2 + sub3) / 3;
+   return average;
 
-//     alert("Final String is " + finalstr);
+}
 
+function CalPercent(sub1,sub2,sub3)
+{
+    var totMarks = 300;
+   var per = ((sub1 + sub2 + sub3)/ totMarks) * 100 ;
+   return per;
 
-// }
+}
 
-// removeVowels();
+mainFunc();
 
-//7.
-
-// function VowelsCounts()
-// {
-//     var vowelstring = prompt("Enter String");
-//    //Pleases read this application and give me gratuity
-//     var count = 0,flag = false;
-//    var i = 0;
-//     do 
-//     {
-
-//     if(vowelstring.toLowerCase().charCodeAt(i) == 97 || vowelstring.toLowerCase().charCodeAt(i) == 101 || vowelstring.toLowerCase().charCodeAt(i) == 105 || vowelstring.toLowerCase().charCodeAt(i) == 111 || vowelstring.toLowerCase().charCodeAt(i) == 118)
-//     {
-//        flag = true;
-//     }
-//     else
-//     {
-//         flag = false;
-
-//     }
-//     switch (flag) {
-
-//         case true:
-
-//              i++;
-//              if (vowelstring.toLowerCase().charCodeAt(i) == 97 || vowelstring.toLowerCase().charCodeAt(i) == 101 || vowelstring.toLowerCase().charCodeAt(i) == 105 || vowelstring.toLowerCase().charCodeAt(i) == 111 || vowelstring.toLowerCase().charCodeAt(i) == 118)
-//             {
-//             count++; 
-//             i++;
-//             continue;
-//             }
-//         default:
-//             i++;
-//             continue;
-//     }
+5.
+function IndexOf(s,str)
+{
 
 
-// }
-// while(i<vowelstring.length)
+    var i = 0,flag = false;
+do 
+{
 
-// alert(count);
-// }
+    if(s === str[i])
+   {
+       alert("Index of character " + s + " is " + i);
+       flag = true;
+       break;
+   }
 
-// VowelsCounts();
+   else
+   {
+       i++;
+       flag = false;
+   }
 
-//8.
+
+}
+while(i<str.length)
+
+if(flag == false)
+   {
+    alert("Your given character is not found");
+   }
+
+}
+
+var str = prompt("Enter String").toLowerCase();
+var s = prompt("Enter character to find its index in your string").toLowerCase();
+IndexOf(s,str);
+
+6.
+
+function removeVowels()
+
+{
+
+    var str = prompt("Enter String to remove all vowels from it");
+
+    var i = 0;
+   var finalstr = "";
+
+  do
+  {
+    if(str.toLowerCase().charCodeAt(i) != 97 && str.toLowerCase().charCodeAt(i) != 101 && str.toLowerCase().charCodeAt(i) != 105 && str.toLowerCase().charCodeAt(i) != 111 && str.toLowerCase().charCodeAt(i) != 118)
+    {
+    finalstr += str[i];
+    i++;
+    }
+    else
+    {
+        i++;
+    }
+  }
+  while(i < str.length)
 
 
-//9.
+
+    alert("Final String is " + finalstr);
+
+
+}
+
+removeVowels();
+
+7.
+
+function VowelsCounts()
+{
+    var vowelstring = prompt("Enter String");
+   //Pleases read this application and give me gratuity
+    var count = 0,flag = false;
+   var i = 0;
+    do 
+    {
+
+    if(vowelstring.toLowerCase().charCodeAt(i) == 97 || vowelstring.toLowerCase().charCodeAt(i) == 101 || vowelstring.toLowerCase().charCodeAt(i) == 105 || vowelstring.toLowerCase().charCodeAt(i) == 111 || vowelstring.toLowerCase().charCodeAt(i) == 118)
+    {
+       flag = true;
+    }
+    else
+    {
+        flag = false;
+
+    }
+    switch (flag) {
+
+        case true:
+
+             i++;
+             if (vowelstring.toLowerCase().charCodeAt(i) == 97 || vowelstring.toLowerCase().charCodeAt(i) == 101 || vowelstring.toLowerCase().charCodeAt(i) == 105 || vowelstring.toLowerCase().charCodeAt(i) == 111 || vowelstring.toLowerCase().charCodeAt(i) == 118)
+            {
+            count++; 
+            i++;
+            continue;
+            }
+        default:
+            i++;
+            continue;
+    }
+
+
+}
+while(i<vowelstring.length)
+
+alert(count);
+}
+
+VowelsCounts();
+
+8.
+var inp = prompt("Enter distance in km");
+print("Distance between two cities in meters :"+ meters(inp));
+print("Distance between two cities in feet :"+ feet(inp));
+print("Distance between two cities in inches :"+ inches(inp));
+print("Distance between two cities in centimeters :"+ centimeters(inp));
+function meters(input)
+{
+
+  var res = input * 1000;
+  return res;
+  
+
+} 
+
+function feet()
+{
+  var res = input * 3280.84;
+  return res;
+}
+
+function inches()
+{
+  var res = input * 39370.1;
+  return res;
+} 
+
+function centimeters()
+{
+  var res = input /100000;
+  return res;
+}
 
 
 //10.
+var amount = prompt("Enter amount to withdraw");
+document.write("you will have " + Math.floor(amount / 100) + " hundred Notes");
+document.write(" ");
+document.write(Math.floor((amount % 100) / 50) + " Fifty Notes");
+document.write(" ");
+document.write(Math.floor(((amount % 100) % 50) / 10) + " ten Notes");
+
+
 
 
 
 
 
 /***************Chap 43 till 48 ********/
-//1,2 Done on HTMl 
 
 //3.
 function RemoveRow() {
@@ -273,11 +308,7 @@ function DecCounter(id) {
 
 /***************Chap 49 till 52 ********/
 
-
-
 //1.
-
-
 function ShowValues() {
   debugger;
 
@@ -353,7 +384,7 @@ function SaveValues() {
 
 function editValues(e)
 {
-
+  debugger;
   document.getElementById("UpdateForm").style.display="block";
   var tdval = e.parentNode;
   var inpIndex = tdval.firstChild.innerHTML;
@@ -408,8 +439,6 @@ function UpdateValues(e)
   tdval.childNodes[4].style.display="block";
  
 }
-
-
 
 
 /***************Chap 58-67 **************/
