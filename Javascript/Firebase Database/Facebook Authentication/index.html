@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook Authentication</title>
-</head>
-<body>
-    <button onclick="login()" type="submit">Facebook Login</button>
-<script src="app.js"></script>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+
 <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-database.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-auth.js"></script>
 <script>
     // Your web app's Firebase configuration
@@ -27,5 +26,58 @@
     firebase.initializeApp(firebaseConfig);
     
   </script>
+  
+</head>
+<body>
+    <button id="login" class="btn btn-primary" onclick="login()" type="submit">Facebook Login</button>
+    <div style="visibility:hidden;" id="maindiv" class="card">
+      <div class="card-header">
+          <ul class="nav nav-pills card-header-pills">
+            <li class="nav-item">
+              <span class="nav-link">Hello!</span>
+            </li>
+            <li class="nav-item">
+              <span id="displayname" class="nav-link"></span>
+            </li>
+            </ul>
+          </div>
+      <div id="carddiv" class="card-body">
+       
+              
+               
+  
+               
+                  
+        
+                   
+
+              </div>
+         
+
+           
+          <div class="input-group">
+              <input id="message" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"> 
+              <div class="input-group-append">
+                  <a onclick="btnsend()" href="#" class="btn btn-primary">Send</a>
+              </div>
+            </div>
+            
+
+    </div>
+
+
+<script src="app.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+crossorigin="anonymous"></script>
+
 </body>
+
+
 </html>
